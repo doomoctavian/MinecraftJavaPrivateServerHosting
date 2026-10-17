@@ -1,0 +1,75 @@
+# World data (can become very large)
+world/
+world_nether/
+world_the_end/
+
+# Backups and server logs
+backups/
+logs/
+crash-reports/
+
+# Server runtime files
+server.jar
+server-*.jar
+eula.txt
+server.properties
+
+# Player and operator data
+whitelist.json
+ops.json
+banned-players.json
+banned-ips.json
+usercache.json
+
+# ==========================================
+# Local credentials and sensitive files
+# ==========================================
+
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.token
+secrets/
+credentials/
+
+# ==========================================
+# Local server configuration
+# ==========================================
+
+# Preserve example configuration files
+# such as config/server.properties.example
+# and other documented templates.
+
+# ==========================================
+# Windows-generated files
+# ==========================================
+
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# ==========================================
+# Editors and development tools
+# ==========================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Temporary files
+# ==========================================
+
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.log
