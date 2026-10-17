@@ -1,0 +1,269 @@
+# Minecraft Server Configuration Example
+
+#
+
+# This file is a DOCUMENTATION TEMPLATE.
+
+# It is not the live server.properties file.
+
+#
+
+# Copy the required settings into your actual
+
+# server.properties file and adjust them as needed.
+
+#
+
+# Reference configuration:
+
+# - Minecraft Java Edition
+
+# - Vanilla server
+
+# - Survival
+
+# - Private Tailnet access through Tailscale
+
+# - Default Minecraft port: 25565
+
+# =========================================================
+
+# SERVER NETWORK
+
+# =========================================================
+
+# Minecraft server port.
+
+# Tailscale does NOT replace the Minecraft port.
+
+# Players connect to:
+
+# <TAILSCALE-IP>:25565
+
+server-port=25565
+
+# Leave blank unless there is a specific reason to bind
+
+# Minecraft to a particular network interface.
+
+#
+
+# This is especially important when using Tailscale,
+
+# because network interfaces and IP addresses can change.
+
+server-ip=
+
+# =========================================================
+
+# GAME MODE
+
+# =========================================================
+
+# Survival mode
+
+gamemode=survival
+
+# Force the configured game mode when players join.
+
+force-gamemode=false
+
+# Allow players to change their game mode only through
+
+# appropriate server permissions/commands.
+
+# Do not give operator privileges unnecessarily.
+
+# =========================================================
+
+# DIFFICULTY
+
+# =========================================================
+
+# Options:
+
+# peaceful
+
+# easy
+
+# normal
+
+# hard
+
+difficulty=normal
+
+# =========================================================
+
+# PLAYER ACCESS
+
+# =========================================================
+
+# Maximum simultaneous players.
+
+# Adjust according to actual server capacity.
+
+max-players=6
+
+# Enable the Minecraft whitelist if private access
+
+# needs to be enforced at the Minecraft layer.
+
+white-list=true
+
+# =========================================================
+
+# ONLINE AUTHENTICATION
+
+# =========================================================
+
+# Keep authentication enabled for a normal
+
+# Minecraft Java Edition server.
+
+online-mode=true
+
+# =========================================================
+
+# PLAYER BEHAVIOR
+
+# =========================================================
+
+# Prevent players from flying using unauthorized
+
+# methods.
+
+allow-flight=false
+
+# Prevent players from being automatically kicked
+
+# immediately after being idle.
+
+#
+
+# 0 = disabled
+
+player-idle-timeout=0
+
+# =========================================================
+
+# WORLD
+
+# =========================================================
+
+# Main world name.
+
+level-name=world
+
+# World generation seed.
+
+#
+
+# Leave blank to generate a random seed.
+
+# If documenting an existing world, do NOT replace
+
+# its actual seed casually.
+
+level-seed=
+
+# Default world type.
+
+level-type=minecraft:normal
+
+# =========================================================
+
+# WORLD GENERATION
+
+# =========================================================
+
+# Enable structures such as villages.
+
+generate-structures=true
+
+# Enable the Nether.
+
+allow-nether=true
+
+# Enable command blocks only if specifically required.
+
+enable-command-block=false
+
+# =========================================================
+
+# PERFORMANCE
+
+# =========================================================
+
+# Start conservatively.
+
+#
+
+# These values can be adjusted after monitoring
+
+# actual server performance.
+
+view-distance=16
+simulation-distance=8
+
+# The exact values should be tuned according to
+
+# the host hardware.
+
+#
+
+# Tune these values to the available host resources
+# and the server's actual performance.
+
+# =========================================================
+
+# SERVER MESSAGE
+
+# =========================================================
+
+motd=Private Minecraft Server
+
+# =========================================================
+
+# SECURITY / ADMINISTRATION
+
+# =========================================================
+
+# Do not expose the server through public
+
+# router port forwarding when Tailscale is being used.
+
+# Keep Windows Firewall enabled on the Windows host.
+
+# Keep Tailscale authentication secure.
+
+# Give OP privileges only to trusted administrators.
+
+# =========================================================
+
+# IMPORTANT NOTES
+
+# =========================================================
+
+# 1. Do not commit the real server.properties if it
+
+# contains environment-specific or sensitive values.
+
+# 2. Do not commit Minecraft world folders.
+
+# 3. Do not commit backups.
+
+# 4. Do not disable online-mode simply to solve
+
+# authentication/connectivity problems.
+
+# 5. Do not change server-ip to a temporary LAN or
+
+# Tailscale address unless there is a specific reason.
+
+# 6. Tailscale provides the private network path.
+
+# Minecraft still listens on port 25565.
+
+# 7. Always back up the world before changing
+
+# important server settings.
