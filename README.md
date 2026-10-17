@@ -1,4 +1,4 @@
-# Private Minecraft Java Server
+# Private Minecraft Java Server Without Port Forwarding Using Tailscale
 
 A small private Minecraft server is easiest to understand when its game service and network path are considered separately.
 
